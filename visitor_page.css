@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;    
+}
+ /* navbar styling */
+ .navbar{
+     top: 0;
+     position: fixed;
+     background-color: #006e80;
+     width: 100%;
+     display: flex;     
+ }
+ 
+ .max-width{
+     width: 1300px;
+     height: 80px;
+     /* padding: 0px 10px; */
+     margin: auto;
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .logo img{
+    margin: 3px 8px;
+    /* padding-left: 20px; */
+    height: 70px;
+    width: auto;
+ }
+ .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+ }
+ 
+ .navbar .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 20px;  
+ }
+ .navbar .menu li a:hover{
+    color: #006e80;
+     background-color: white;     
+ }
+  /* *****************************MID BANNER***************************** */
+#midbanner{
+    height: 480px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+}
+#midbanner::before{
+    content: "";
+    background:url(images/patientVisitorMidBanner.jpg) no-repeat center center/cover;    
+    margin-top: 80px;    
+    position: absolute;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;    
+}
+#midbanner h1{    
+    padding-left: 30px;
+}
+#midbanner ul{
+    padding-left: 30px;
+    display: flex;    
+    list-style: none;
+}
+#midbanner ul li a{
+    color: black;
+}
+
+/* **************WEBSITE-CONTENT***************/
+#website-content1{
+    padding-left: 12vw;
+    padding-right: 24vw;
+    padding-top: 100px;
+}
+/* ****************cards********************** */
+/* expertise section */
+#expertise{
+    padding-top: 60px;
+    padding-left: 12vw;
+    /* padding-left: 120px; */
+    padding-right: 12vw;
+    
+}
+/* outer div */
+
+.expertise-item{
+    
+    display: grid;
+    grid-template-columns: repeat(4,auto);    
+    justify-content:left;  
+}
+/* inner div */
+
+.box{
+    /* border: 0.5px solid rgb(202, 199, 199); */
+    margin: 4px 0px; 
+    background: center;
+    margin: 4px;
+    width: 250px;
+    height: 200px;
+    display: inline-flex;
+    /* x- axis center- justify-content */
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0px 15px; */
+}
+.box:hover{    
+    cursor: pointer;
+    /* color: white; */
+    /* background-image: linear-gradient(to top, #000000, #ffffff);  */
+    
+}
+.inside-box{
+    width: 100px;
+    height: 10;
+}
+
+.box img{
+    /* padding: 30px; */
+    height: 70px;
+    margin: auto;
+    display: block;   
+}
+
+.h-secondary2{
+    font-size: 12px;    
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+.center{
+    text-align: center;
+}
+/* *******************END-BANNER******************** */
+#end-banner1{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #52a44a
+}
+/* ***********FOOTER SECTION***************** */
+footer{
+    padding: 25px 12vw;
+    background-color: rgb(239, 239, 239);
+}
+/* ****************UTILITY CLASSES******************* */
+.h-primary{
+    font-size: 2rem;
+    color: #006e80;      
+}
+.h-primary1{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 12vw;
+}
+.h-primary2{
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-left: 12vw;
+    padding-bottom: 40px;
+}
+.h3{
+    font-size: 1.4rem;
+    color: #006e80;
+}
+.left-align{
+    padding-left: 12vw;;
+}
+.h-secondary{
+    font-size: 1.13rem;    
+}
+.color-black{
+    color: black
+}
+.hover:hover{
+    color: #006e80;
+}
+

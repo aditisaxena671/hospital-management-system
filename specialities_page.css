@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding: 0;
+    left: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;       
+}
+ /* navbar styling */
+ .navbar{
+     top: 0;
+     position: fixed;
+     background-color: #006e80;
+     width: 100%;
+     display: flex;
+ } 
+ .max-width{
+     width: 1300px;
+     height: 82px;
+     /* padding: 0px 10px; */
+     margin: auto;
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .logo img{
+    margin: 3px 8px;
+    /* padding-left: 20px; */
+    height: 70px;
+    width: auto;
+ }
+ .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+ }
+ 
+ .navbar .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 20px;  
+ }
+ .navbar .menu li a:hover{
+    color: #006e80;
+     background-color: white;     
+ }
+
+  /* *****************************MID BANNER***************************** */
+#midbanner{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+}
+#midbanner::before{
+    content: "";
+    left: 0;
+    background:url(images/speciality2.jpg) no-repeat center center/cover;    
+    margin-top: 80px;    
+    position: absolute;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;    
+}
+#midbanner h1{    
+    padding-left: 30px;
+}
+#midbanner ul{
+    padding-left: 30px;
+    display: flex;    
+    list-style: none;
+}
+#midbanner ul li a{
+    color: black;
+}
+/* ********************COLAPSIBLE****************** */
+/*
+ CSS for the main interaction
+*/
+.accordion > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+  }
+  
+  .accordion .content {
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .content {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .accordion label {
+    display: block;
+  }
+  
+  /*
+   Styling
+  */
+  /* body {
+    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+    color: #333;
+    font-weight: 300;
+  } */
+  
+  .accordion {
+    margin-bottom: 1em;
+    padding-left: 8vw;
+    
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .content {
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+  }
+  
+  .accordion .handle {
+    margin: 0;
+    font-size: 1.125em;
+    line-height: 1.2em;
+  }
+  
+  .accordion label {
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 15px;
+    background: #006e80;
+  }
+  
+  .accordion label:hover,
+  .accordion label:focus {
+    background: #1c3d42;
+  }
+  .content{
+    background: radial-gradient(#fff, #b8cbce)
+  }
+  
+  .accordion .handle label:before {
+    font-family: 'fontawesome';
+    content: "\f054";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .58em;
+    line-height: 1.556em;
+    vertical-align: middle;
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+    content: "\f078";
+  }
+  
+  
+  /*
+   Demo purposes only
+  */
+  /* *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+   */
+  /* body {
+    padding: 40px;
+  } */
+  
+  a {
+    color: #06c;
+  }
+  
+  p {
+    margin: 0 0 1em;
+  }
+  
+  h1 {
+    margin: 0 0 1.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  
+  .accordion {
+    max-width: 65em;
+  }
+  
+  .accordion p:last-child {
+    margin-bottom: 0;
+  }
+  /* **********END BANNER************ */
+#end-banner1{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 30px;
+    background-color: #52a44a
+}
+ /* ****************FOOTER************* */
+footer{
+    padding: 25px 12vw;
+    background-color: rgb(239, 239, 239);
+}
+/* ****************UTILITY CLASSES******************* */
+.h-primary{
+    font-size: 2rem;
+    color: #006e80;      
+}
+.h-primary1{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 12vw;
+}
+.h-primary2{
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-left: 12vw;
+    padding-bottom: 40px;
+}
+.h3{
+    font-size: 1.4rem;
+    color: #006e80;
+}
+.h-secondary{
+    font-size: 1.13rem;    
+}
+

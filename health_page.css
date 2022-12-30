@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;    
+}
+ /* navbar styling */
+ .navbar{
+     top: 0;
+     position: fixed;
+     background-color: #006e80;
+     width: 100%;
+     display: flex;     
+ }
+ 
+ .max-width{
+     width: 1300px;
+     height: 80px;
+     /* padding: 0px 10px; */
+     margin: auto;
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ /* .navbar .logo a{
+    color: #006e80;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 20px;
+ } */
+ .logo img{
+    margin: 3px 8px;
+    /* padding-left: 20px; */
+    height: 70px;
+    width: auto;
+ }
+ .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+ }
+ 
+ .navbar .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 20px;  
+ }
+ .navbar .menu li a:hover{
+    color: #006e80;
+     background-color: white;     
+ }
+  /* *****************************MID BANNER***************************** */
+#midbanner{
+    height: 480px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+}
+#midbanner::before{
+    content: "";
+    background:url(images/healthPageMidBannner.jpg) no-repeat center center/cover;    
+    margin-top: 80px;    
+    position: absolute;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;    
+}
+#midbanner h1{    
+    padding-left: 30px;
+}
+#midbanner ul{
+    padding-left: 30px;
+    display: flex;    
+    list-style: none;
+}
+#midbanner ul li a{
+    color: black;
+}
+/* ****************cards********************** */
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.services{
+    background: #e9e8e8;
+    background: radial-gradient(#fff, #8ba3a7);
+}
+
+.section-heading{
+    color: #070606;
+    padding-top: 140px;
+    text-align: center;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+    line-height: -0.5;
+}
+.section-heading + p{
+    color: gray;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.section-heading span{
+    color: crimson;
+}
+section.services .card-wrapper .card{       
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family: "Lato", sans-serif;
+    color: gray;
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    border: 6px solid #006e80;
+    cursor: pointer;
+}
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color:  #006e80;
+    font-size: 1.5rem;
+}
+/* **********END BANNER************ */
+#end-banner1{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #52a44a
+}
+/* ***********FOOTER SECTION***************** */
+footer{
+    padding: 25px 12vw;
+    background-color: rgb(239, 239, 239);
+}
+/* ****************UTILITY CLASSES******************* */
+.h-primary{
+    font-size: 2rem;
+    color: #006e80;      
+}
+.h-primary1{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 12vw;
+}
+.h-primary2{
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-left: 12vw;
+    padding-bottom: 40px;
+}
+.h3{
+    font-size: 1.4rem;
+    color: #006e80;
+}
+.h-secondary{
+    font-size: 1.13rem;    
+}
+.color-black{
+    color: black
+}
+.hover:hover{
+    color: #006e80;
+}

@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;       
+}
+ /* navbar styling */
+ .navbar{
+     top: 0;
+     position: fixed;
+     background-color: #006e80;
+     width: 100%;
+     display: flex;
+ } 
+ .max-width{
+     width: 1300px;
+     height: 80px;
+     /* padding: 0px 10px; */
+     margin: auto;
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .logo img{
+    margin: 3px 8px;
+    /* padding-left: 20px; */
+    height: 70px;
+    width: auto;
+ }
+ .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+ }
+ 
+ .navbar .menu li a{
+    color: #ffffff;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 20px;  
+ }
+ .navbar .menu li a:hover{
+    color: #006e80;
+     background-color: white;     
+ }
+ /* *************END-BANNER2*********** */
+ #end-banner2{
+    
+    /* height: 610px; */
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;   
+    background-color: #006e80;
+    padding-top: 80px;    
+}
+.end-banner-card{
+    display: grid;
+    grid-template-columns: repeat(2,auto);    
+    justify-content: center;
+   
+}
+
+.box{
+    /* border: 0.5px solid rgb(202, 199, 199); */
+    margin: 4px 0px;
+    background: center;
+    margin: 4px;
+    width: 600px;
+    height: 220px;
+    display: inline-flex; 
+    padding-top: 20px;   
+    padding-left: 50px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+
+}
+.box a:hover{
+    color: white;
+}
+/* **********END BANNER************ */
+#end-banner1{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #52a44a;    
+}
+/* ****************FOOTER************* */
+footer{
+    padding: 25px 12vw;
+    background-color: rgb(239, 239, 239);
+}
+/* ****************UTILITY CLASSES******************* */
+
+.h-primary2{
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-left: 13.8vw;
+    padding-top: 20px;
+    /* padding-bottom: 40px; */
+    justify-content: center;
+    height: 80px;
+    width: 100vw;
+    background-color: #52a44a
+}
+.card-text{
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 20px;
+}
+.h-primary1{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 12vw;
+}
+.h-secondary{
+    font-size: 1.13rem;    
+}
+.color-white{
+    color: white;
+}
+.color-black{
+    color: black
+}
+.text-padding{
+    padding-left: 40px;
+}
